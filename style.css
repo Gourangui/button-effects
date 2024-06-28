@@ -1,5 +1,4 @@
 body {
-	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -7,11 +6,17 @@ body {
 	gap: 30px;
 }
 
+a{
+	text-decoration: none;
+	font-family: sans-serif;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Button 1 */
 a.btn1 {
-	text-decoration: none;
 	color: #262626;
-	font-family: sans-serif;
 	font-size: 45px;
 	border: 5px solid #262626;
 	padding: 40px 80px;
@@ -39,9 +44,7 @@ a.btn1:hover:before {
 
 /* Button 2 */
 a.btn2{
-	text-decoration: none;
 	color: #351435;
-	font-family: sans-serif;
 	font-size: 40px;
 	border: 3px solid #351435;
 	padding: 40px 80px;
@@ -73,3 +76,94 @@ a.btn2:hover{
 }
 
 /* Button 3 */
+a.btn3{
+	padding: 40px 80px;
+	color: #E1332D;
+	border: 3px solid #E1332D;
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 300;
+	letter-spacing: -2px;
+	transition: all .5s;
+	font-family: 'Roboto';
+}
+
+a.btn3:hover{
+	font-weight: 900;
+	letter-spacing: 10px;
+	border: 7px solid #E1332D;
+}
+
+/* Button 4 */
+.bg-dark{
+	width: 100%;
+	background-color: #222;
+	height: 100%;
+	max-height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 0;
+}
+
+a.btn4{
+	color: #fff;
+	font-size: 40px;
+	border: 3px solid #fff;
+	padding: 40px 80px;
+	position: relative;
+	transition: all 1s;
+	overflow: hidden;
+}
+
+a.btn4::before{
+	content: 'Good!';
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #f44336;
+	width: 100%;
+	height: 100%;
+	transform-origin: top;
+	transform: translateY(-100%);
+	transition: all 1s;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+a.btn4:hover:before{
+	transform: translateY(0);
+}
+
+/* Button 5 */
+a.btn5{
+	color: #fff;
+	font-size: 40px;
+	border: 3px solid #fff;
+	padding: 40px 80px;
+	position: relative;
+	transition: all .3s;
+	overflow: hidden;
+}
+
+a.btn5:hover{
+	background-color: #f44336;
+}
+
+a.btn5::before{
+	content: '';
+	background-color: #fff;
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	transform: translateX(-100%) rotate(45deg);
+	transition: all .3s;
+}
+
+a.btn5:hover:before{
+	transform: translateX(100%) rotate(45deg);
+}
