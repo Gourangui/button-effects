@@ -167,3 +167,173 @@ a.btn5::before{
 a.btn5:hover:before{
 	transform: translateX(100%) rotate(45deg);
 }
+
+/* Button 6 */
+a.btn6{
+	color: transparent;
+	background-color: #262626;
+	font-size: 40px;
+	border: 3px solid #262626;
+	padding: 40px 80px;
+	position: relative;
+	overflow: hidden;
+}
+
+a.btn6::before{
+	content: 'Hover Me';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #fffa65;
+	color: #262626;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all .5s;
+}
+
+a.btn6:hover:before{
+	transform: translate(100%, -100%);
+}
+
+a.btn6::after{
+	content: 'Hover Me';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #fffa65;
+	color: #262626;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all .5s;
+	transform: translate(-100%, 100%);
+}
+
+a.btn6:hover::after{
+	transform: translate(0, 0);
+}
+
+/* Button 7 */
+a.btn7{
+	color: #262626;
+	font-size: 40px;
+	border: 3px solid #262626;
+	padding: 40px 80px;
+	position: relative;
+	overflow: hidden;
+	transition: all .5s;
+}
+
+a.btn7::before{
+	content: 'Hover Me';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #262626;
+	color: #fff;
+	transform: scale(5);
+	opacity: 0;
+	transition: all .5s;
+}
+
+a.btn7:hover:before{
+	transform: scale(1);
+	opacity: 1;
+}
+
+/* Button 8 */
+button.btn8{
+	color: tomato;
+	font-size: 25px;
+	border: 2px solid tomato;
+	padding: 20px 40px;
+	position: relative;
+	transition: all .5s;
+	overflow: hidden;
+	background: none;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+button.btn8::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: tomato;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	border-radius: 0 0 50% 50%;
+	height: 0%;
+	transition: all .5s;
+}
+
+button.btn8:hover{
+	color: #fff;
+}
+
+button.btn8:hover:before{
+	height: 190%;
+}
+
+/* Button 9 */
+button.btn9{
+	padding: 20px 40px;
+	text-transform: uppercase;
+	background-color: #f1c40f;
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: 2px;
+	position: relative;
+	border: none;
+}
+
+button.btn9::before{
+	content: "button";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #2ce771;
+	transform: rotateX(270deg);
+	transform-origin: top;
+	transition: all .5s;
+}
+
+button.btn9:hover:before, button.btn9:hover::after{
+	transform: rotateX(0deg);
+}
+
+button.btn9::after{
+	content: "button";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: tomato;
+	transform: rotateX(270deg);
+	transform-origin: top;
+	transition: all .5s;
+	transition-delay: .25s;
+}
